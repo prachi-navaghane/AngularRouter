@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="md-col-12">
+            <h1 class="well">Second component {{idUrl}}</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <a [routerLink]="['']">Back</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <input type="text" [(ngModel)]="idNum">
+                <a [routerLink]="['/second', idNum]">second</a>
+            </div>
+        </div>
+    </div>
+</div>

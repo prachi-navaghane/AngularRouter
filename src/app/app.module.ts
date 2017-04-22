@@ -1,20 +1,24 @@
+import { FirstComponent } from './first/first.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { FirstComponent } from './first/first.component';
+import { AppRouterModule } from "app/app.router";
+import { WelcomeComponent } from './welcome/welcome.component';
+import { SecondComponent } from './second/second.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    FirstComponent
+    AppComponent
+    ,FirstComponent, WelcomeComponent, SecondComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

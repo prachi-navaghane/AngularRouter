@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Welcome home!</h1>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-12"><input value="First" (click)="OnBtnClick()" type="button" class="btn btn-primary">
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-12"><input value="Second" (click)="OnSecondBtnClick()" type="button" class="btn btn-primary">
+            <a [routerLink]="['second', '400']">second</a>
+
+        </div>
+
+    </div>
+</div>
