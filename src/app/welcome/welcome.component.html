@@ -12,7 +12,7 @@
     </div>
     <div class="row">
         <div class="col-md-12"><input value="Second" (click)="OnSecondBtnClick()" type="button" class="btn btn-primary">
-            <a [routerLink]="['second', '400']">second</a>
+            <a [routerLink]="['second', '400']" [queryParams]="{'myName' :'apple'}">second</a>
 
         </div>
 

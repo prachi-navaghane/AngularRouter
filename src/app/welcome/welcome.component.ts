@@ -18,7 +18,7 @@ export class WelcomeComponent implements OnInit {
   }
   OnSecondBtnClick()
   {
-    this.router.navigate(['second', '100']);
+    this.router.navigate(['second', '100'], {queryParams : {myName :'android'}});
   }
 
 }
