@@ -4,19 +4,24 @@
             <h1 class="well">Second component {{idUrl}} {{queryMyName}}</h1>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <a [routerLink]="['']">Back</a>
-            </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <a [routerLink]="['']">Back</a>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <input type="text" [(ngModel)]="idNum">
-                <a [routerLink]="['/second', idNum]">second</a>
-            </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <input type="text" [(ngModel)]="idNum">
+            <a [routerLink]="['/second', idNum]">second</a>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-12">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
 </div>
