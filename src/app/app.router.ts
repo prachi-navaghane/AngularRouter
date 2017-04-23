@@ -14,7 +14,9 @@ const secondRoutes : Routes =[
 export const appRoutes: Routes = [
   { path: '', component: WelcomeComponent },
   { path: 'first', component: FirstComponent },
-  { path: 'second/:id', component:SecondComponent, children: secondRoutes }
+  { path: 'second/:id', component:SecondComponent, children: secondRoutes },
+  { path: '**', redirectTo: '' }
+
 ];
 
 export const AppRouterModule = RouterModule.forRoot(appRoutes);
